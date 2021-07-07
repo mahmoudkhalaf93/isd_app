@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+        <!--android:id="@+id/nav_sharsde"-->
+        <!--android:icon="@drawable/ic_account_box_black_24dp"-->
+        <!--android:title="my profile" />-->
+    <!--</group>-->
+    <item android:title="@string/Services">
+        <menu>
+
+        <item
+            android:id="@+id/addsrvc"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/AddService" />
+        <item
+            android:id="@+id/mysrvecc"
+            android:icon="@drawable/ic_store_mall_directory_black_24dp"
+            android:title="@string/MyService" />
+        <!--<item-->
+            <!--android:id="@+id/cam"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Delete Service" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+        </menu>
+    </item>
+    <item android:title="@string/App">
+        <menu>
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Share" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/exit"
+                android:title="@string/logouts" />
+        </menu>
+    </item>
+
+</menu>

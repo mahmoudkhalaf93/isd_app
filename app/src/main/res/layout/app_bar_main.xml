@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.isd.HomePageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#334455"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/colorPrimary"
+                android:elevation="8dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:id="@+id/toolbarras"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginBottom="10dp"
+                    android:background="?attr/colorPrimary"
+                    android:minHeight="?attr/actionBarSize"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:theme="?attr/actionBarTheme">
+
+                    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/editotesxt"
+                        android:drawableLeft="@drawable/ic_search_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:hint="@string/Search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textUri"
+                        android:textColor="#F2B33F"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <Switch
+                            android:id="@+id/map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pin_drop_black_24dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <include layout="@layout/content_main" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

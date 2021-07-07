@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarsaxz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00675b"
+        android:elevation="8dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+         />
+    <LinearLayout
+
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/srvpro"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/srvpro"
+    >
+        <ImageView
+            android:id="@+id/srvphoto"
+            android:layout_width="159dp"
+            android:layout_height="159dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/empty" />
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="181dp"
+            android:layout_height="157dp"
+
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <!--info-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+
+                android:orientation="horizontal"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/servicename"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/servcname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    tools:text="كهربائى" />
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="@string/description"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/descptionsa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="ملعب متميز يشمل جميع انواع الرياضاتssssssssssssssssssssssssssssssssssssssss مع نخبه من امهر المدربين" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBarSer"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:numStars="5"
+        android:stepSize=".5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarSer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/providname"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/providnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="15sp"
+            tools:text="0106457878788" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/phone"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:autoLink="phone"
+            android:linksClickable="true"
+            android:textSize="15sp"
+            tools:text="0106457878788" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_phone_black_24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gompsse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/mapbutton"
+        android:drawableRight="@drawable/ic_pin_drop_black_24dp"
+        android:padding="8dp"
+        android:text="@string/Maplocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentrecv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Comments"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gompsse" />
+
+    <EditText
+        android:id="@+id/entercommment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:imeOptions="actionGo"
+        android:inputType="textUri"
+        android:hint="@string/writecomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentrecv" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

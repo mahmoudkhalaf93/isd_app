@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.android.isd">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ward"
+        android:label="ISD"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+       android:theme="@style/AppTheme" >
+
+        <activity android:name=".StartScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".sign_up" android:label="sign_up"  android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            />
+        <activity android:name=".Sign_in" android:label="Home" android:screenOrientation="portrait" />
+
+        <activity android:name=".HomePageActivity" android:label="Home" android:screenOrientation="portrait" />
+        <activity android:name=".EditService" android:label="Home" android:screenOrientation="portrait" />
+        <activity android:name=".search_Recyclerview.Sub_cat"  android:screenOrientation="portrait" />
+        <activity android:name=".HomeService" android:label="Service" android:screenOrientation="portrait" />
+        <activity android:name=".AddService" android:label="AddService" android:screenOrientation="portrait" />
+        <activity android:name=".MyServices" android:label="MyServices" android:screenOrientation="portrait" />
+        <activity android:name=".search_Recyclerview.MainActivRecial" android:label="Recikal" android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <receiver android:name=".AlarmReceiver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#334455"
+    android:layout_height="match_parent">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc334455"
+        >
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+    <TextView
+        android:id="@+id/toolbarsaxz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00675b"
+       android:text="Add service"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="#ffffff"
+        />
+
+
+    <EditText
+        android:id="@+id/namesrvce"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/editotesxt"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/servicename"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editotesxt"
+        android:drawableLeft="@drawable/ic_short_text_black_24dp"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namesrvce" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editotesxt"
+        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/editotesxt"
+        android:drawableLeft="@drawable/ic_airport_shuttle_black_24dp"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+            <EditText
+                android:id="@+id/facebok"
+                android:layout_width="300dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/editotesxt"
+                android:drawableLeft="@drawable/facoklogo"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="@string/facbok"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <EditText
+                android:id="@+id/webiste"
+                android:layout_width="300dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/editotesxt"
+                android:drawableLeft="@drawable/wwwwweb"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="@string/webistss"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/facebok" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/ServicesCategory"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/webiste" />
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/editotesxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="@string/city"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="12dp"
+                android:background="@drawable/editotesxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/addsarvice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
